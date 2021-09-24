@@ -9,7 +9,7 @@ class Search extends Component {
     //  发送网络请求
     axios.get(`https://api.github.com/search/users?q=${keyWord}`).then(
       response => {
-        console.log(response);
+        console.log(response)
       },
       error => {
         console.error(error);
