@@ -12,7 +12,7 @@ class Search extends Component {
         console.log(response);
       },
       error => {
-        console.error(error)
+        console.error(error);
       }
     )
   }
