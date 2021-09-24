@@ -1,20 +1,41 @@
 import React, {Component} from 'react';
 import './index.css';
-import Item from "../Item";
 
 class List extends Component {
   render() {
-    const {todos, updateTodo} = this.props;
-
     return (
-
-      <ul className="todo-main">
-        {
-          todos.map(todo => {
-            return <Item key={todo.id} {...todo} updateTodo={updateTodo} />
-          })
-        }
-      </ul>
+      <div className="row">
+        <div className="card">
+          <a href="https://github.com/reactjs" target="_blank" rel="noreferrer">
+            <img alt="avatar" src="https://avatars.githubusercontent.com/u/6412038?v=3" style={{width: '100px'}}/>
+          </a>
+          <p className="card-text">reactjs</p>
+        </div>
+        <div className="card">
+          <a href="https://github.com/reactjs" target="_blank" rel="noreferrer">
+            <img alt="avatar" src="https://avatars.githubusercontent.com/u/6412038?v=3" style={{width: '100px'}}/>
+          </a>
+          <p className="card-text">reactjs</p>
+        </div>
+        <div className="card">
+          <a href="https://github.com/reactjs" target="_blank" rel="noreferrer">
+            <img alt="avatar" src="https://avatars.githubusercontent.com/u/6412038?v=3" style={{width: '100px'}}/>
+          </a>
+          <p className="card-text">reactjs</p>
+        </div>
+        <div className="card">
+          <a href="https://github.com/reactjs" target="_blank" rel="noreferrer">
+            <img alt="avatar" src="https://avatars.githubusercontent.com/u/6412038?v=3" style={{width: '100px'}}/>
+          </a>
+          <p className="card-text">reactjs</p>
+        </div>
+        <div className="card">
+          <a href="https://github.com/reactjs" target="_blank" rel="noreferrer">
+            <img alt="avatar" src="https://avatars.githubusercontent.com/u/6412038?v=3" style={{width: '100px'}}/>
+          </a>
+          <p className="card-text">reactjs</p>
+        </div>
+      </div>
     );
   }
 }
