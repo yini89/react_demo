@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Route, Switch, Redirect} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import About from './pages/About';
 import Home from './pages/Home';
 import Header from "./components/Header";
@@ -18,17 +18,16 @@ class App extends Component {
         <div className="row">
           <div className="col-xs-2 col-xs-offset-2">
             <div className="list-group">
-              <MyNavLink to="/about" a="a" b="b">About</MyNavLink>
-              <MyNavLink to="/home">Home</MyNavLink>
+              <MyNavLink to="/atguigu/about" a="a" b="b">About</MyNavLink>
+              <MyNavLink to="/atguigu/home">Home</MyNavLink>
             </div>
           </div>
           <div className="col-xs-6">
             <div className="panel">
               <div className="panel-body">
                 <Switch>
-                  <Route path="/about" component={About}></Route>
-                  <Route path="/home" component={Home}></Route>
-                  <Redirect to="/home"></Redirect>
+                  <Route path="/atguigu/about" component={About}></Route>
+                  <Route path="/atguigu/home" component={Home}></Route>
                 </Switch>
               </div>
             </div>

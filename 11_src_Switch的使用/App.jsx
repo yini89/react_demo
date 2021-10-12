@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
-import {Route, Switch, Redirect} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import About from './pages/About';
 import Home from './pages/Home';
 import Header from "./components/Header";
 import MyNavLink from "./components/MyNavLink";
+import Test from "./pages/Test";
 
 class App extends Component {
 
@@ -28,7 +29,7 @@ class App extends Component {
                 <Switch>
                   <Route path="/about" component={About}></Route>
                   <Route path="/home" component={Home}></Route>
-                  <Redirect to="/home"></Redirect>
+                  <Route path="/home" component={Test}></Route>
                 </Switch>
               </div>
             </div>
